@@ -9,6 +9,8 @@ const rss_feed = "https://feeds.soundcloud.com/users/soundcloud:users:248666363/
 
 app.get('/api/rssfeed.rss', (req, res) => {
 
+  https.get('https://tomp3.herokuapp.com/', () => {});
+
   https.get(rss_feed, (resp) => {
     let data = '';
 
